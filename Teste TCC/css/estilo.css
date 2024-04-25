@@ -1,5 +1,6 @@
-body{
-    background-color: #3b2f2f; /* Colocando cor no fundo do site */
+body {
+    background-color: #3b2f2f;
+    /* Colocando cor no fundo do site */
 }
 
 * {
@@ -8,38 +9,51 @@ body{
     box-sizing: border-box;
 }
 
-nav { /*  TODA A NAV BAR DO SITE  */
-    display: flex; /* DEIXA TUDO FLEXIVEL MUITO IMPORTANTE */
-    justify-content: space-between;   /* Não sei ao certo porém me parece que ele cria um espaço entre os objetos */
-    align-items: center; /* Alinha todos os texto no meio do container (Olhando horizontalmente)  */
-    min-height: 80px; /* Altura minima do container */
-    background-color: #333; /*  Cor de fundo da Nav bar  */
-    padding: 0 2rem; /*  Cria um espaço individualmente entre cada elemento  */
+nav {
+    /*  TODA A NAV BAR DO SITE  */
+    display: flex;
+    /* DEIXA TUDO FLEXIVEL MUITO IMPORTANTE */
+    justify-content: space-between;
+    /* Não sei ao certo porém me parece que ele cria um espaço entre os objetos */
+    align-items: center;
+    /* Alinha todos os texto no meio do container (Olhando horizontalmente)  */
+    min-height: 80px;
+    /* Altura minima do container */
+    background-color: #333;
+    /*  Cor de fundo da Nav bar  */
+    padding: 0 2rem;
+    /*  Cria um espaço individualmente entre cada elemento  */
 }
 
-.logo { /*  Logo do site  */
+.logo {
+    /*  Logo do site  */
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.nav-links { /*  CONTAINER SOMENTE DOS LINKS  */
+.nav-links {
+    /*  CONTAINER SOMENTE DOS LINKS  */
     display: flex;
     justify-content: space-around;
     width: 40%;
 }
 
-.nav-links li { /*  Só deixando o link parecer menos um link e sair do modelo de LISTA  */
+.nav-links li {
+    /*  Só deixando o link parecer menos um link e sair do modelo de LISTA  */
     list-style: none;
 }
 
-.nav-links a { /*  TEXTO dos Link do site  */
+.nav-links a {
+    /*  TEXTO dos Link do site  */
     color: #fff;
     text-decoration: none;
     letter-spacing: 2px;
     /* font-weight: bold; */
-    font-weight: bold; /*  Altera a grosura da letra  */
-    padding: 10px; /*  Espaço entre os links  */
+    font-weight: bold;
+    /*  Altera a grosura da letra  */
+    padding: 10px;
+    /*  Espaço entre os links  */
 }
 
 /* .burger-menu {
@@ -55,7 +69,7 @@ nav { /*  TODA A NAV BAR DO SITE  */
 } */
 
 @media screen and (max-width: 1024px) {
-   .nav-links {
+    .nav-links {
         width: 60%;
     }
 }
@@ -64,7 +78,8 @@ nav { /*  TODA A NAV BAR DO SITE  */
     body {
         overflow-x: hidden;
     }
-   .nav-links {
+
+    .nav-links {
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -77,23 +92,25 @@ nav { /*  TODA A NAV BAR DO SITE  */
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
-   .nav-links li {
+
+    .nav-links li {
         opacity: 0;
     }
-   .burger-menu {
-        display: block;
-    }
+
 }
 
-.nav-active {
-    transform: translateX(0%);
-}
+
+/* @media */
+/* .nav-active { */
+    /* transform: translateX(0%); */
+/* } */
 
 @keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0px);
@@ -243,27 +260,86 @@ nav { /*  TODA A NAV BAR DO SITE  */
 
 /* 3 BLOCOS  DE INFORMAÇÃO */
 .bloco {
-    display: flex; /*  Sempre colocar para dexar o objeto flexivel um ao lado do outro  */
-    justify-content: space-between; /* Não sei ao certo porém teoricamente cria um espaço? */
-    margin: 0 auto; /*  Está centralizando todos os blocos no centro do caontainer */ 
-    width: 80%; /*  Modifica o tamanho dos objetos */ 
-    padding: 40px; /*  Está criando uma especi de camada de margin em volta do objeto fazendo o objeto ir para baixo neste caso */
+    display: flex;
+    /*  Sempre colocar para dexar o objeto flexivel um ao lado do outro  */
+    justify-content: space-between;
+    /* Não sei ao certo porém teoricamente cria um espaço? */
+    margin: 0 auto;
+    /*  Está centralizando todos os blocos no centro do caontainer */
+    width: 80%;
+    /*  Modifica o tamanho dos objetos */
+    padding: 40px;
+    /*  Está criando uma especi de camada de margin em volta do objeto fazendo o objeto ir para baixo neste caso */
 }
 
 .conteudo {
-    margin: auto; /*  Está criando uma margin entre os conteudos os textos  */
-    width: 30%; /* Definindo o tamanho (Largura) deste conteudo  */
-    padding: 40px; /*  Defindo o tamanho (altura) deste conteudo  */
-    background-color: #f2f2f2; /*  Define a cor deste objeto  */
-    border-radius: 10px; /*  Arredonda a borda do objeto */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*  Cria uma especie de sombra no objeto tendo uma impressão de profundidade  */
+    margin: auto;
+    /*  Está criando uma margin entre os conteudos os textos  */
+    width: 30%;
+    /* Definindo o tamanho (Largura) deste conteudo  */
+    padding: 40px;
+    /*  Defindo o tamanho (altura) deste conteudo  */
+    background-color: #f2f2f2;
+    /*  Define a cor deste objeto  */
+    border-radius: 10px;
+    /*  Arredonda a borda do objeto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*  Cria uma especie de sombra no objeto tendo uma impressão de profundidade  */
 }
 
 .conteudo h2 {
-    text-align: center; /* Está centralizando o texto no objto */
-    margin-bottom: 20px; /* Está criando um espaço entre os texto principal e o conteudo */
+    text-align: center;
+    /* Está centralizando o texto no objto */
+    margin-bottom: 20px;
+    /* Está criando um espaço entre os texto principal e o conteudo */
 }
 
 .conteudo p {
-    text-align: justify; /* MUITO IMPORTANTE ESTÁ JUSTIFICANDO TODO O TEXTO (p) */
+    text-align: justify;
+    /* MUITO IMPORTANTE ESTÁ JUSTIFICANDO TODO O TEXTO (p) */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ccc;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
 }

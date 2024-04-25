@@ -13,7 +13,7 @@ loginSection.addEventListener('click', (e) => {
 
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselItems = document.querySelectorAll('.carousel-item');
-const carouselControlPrev = document.querySelector('.carousel-control-prev');
+const carouselControlPrev = document.querySelector('.carousel-control-  prev');
 const carouselControlNext = document.querySelector('.carousel-control-next');
 
 let currentSlide = 0;
