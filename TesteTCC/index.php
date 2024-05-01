@@ -4,48 +4,30 @@ include ('conexao.php');
 <!DOCTYPE html>
 <html lang="en.">
 
-<!-- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
-</head> -->
+</head>
 
 <body>
     <!-- SISTEMA ONDE O CADASTRO OU LOGIN DO USUARIO MOSTRA O PRODUTO QUE ELE POSSUI PARA BAIXAR OU ACHAR MAIS RAPIDO O SOFTWARE DO APARENHO (MOUSE, TECLADO, ...) -->
-    <!-- <nav>
+    <nav>
         <div class="logo">
             <h1>Logo</h1>
         </div>
         <ul class="nav-links">
             <li><a href="index.php">casa</a></li>
-            <li><a href="produto.html">Produtos</a></li>
-            <li><a href="">Software</a></li>
-            <li><a href="#" class="login-button">Login</a></li>
+            <li><a href="pagina2.php">Produtos</a></li>
+            <li><a href="pagina3.php">Software</a></li>
+            <li><a href="login.php" class="login-button">Login</a></li>
         </ul>
-        <div class="login-section">
-            <div class="login-form" id="login-form">
-                <h2>Login</h2>
-                <form>
-                    <input type="text" placeholder="Username" required>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit">Login</button>
-                </form>
-                <p>Don't have an account? <a href="#" id="cadastro-link">Sign up</a></p>
-            </div> -->
-            <!-- <div class="cadastro-form" id="cadastro-form" style="display: none;"> -->
-                <h2>Cadastro</h2>
-                <form action="cadastro_script.php" method="post"> <!-- ACTION (PARA ONDE VOU MANDAR ESTÁ INFORMAÇÃO) -->
-                    <input type="text"  name="nome" placeholder="Nome" type="text" required>
-                    <input type="email" name="email" placeholder="Email" type="text" required>
-                    <input type="telefone" name="telefone" placeholder="telefone" type="number" required>
-                    <input type="password" name="senha" placeholder="Senha" type="number">
-                    <button type="submit"  value="Cadastrar">Cadastrar</button>
-                </form>
-            <!-- </div> -->
-        <!-- </div> -->
-    <!-- </nav> -->
-    <!-- <div class="carousel">
+        
+            
+        </div>
+    </nav>
+    <div class="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img/1.png" alt="Image 1">
@@ -108,9 +90,9 @@ include ('conexao.php');
                 </ul>
             </div>
         </div>
-        <p class="copyright">Copyright 2023 - All Rights Reserved</p> 
+        <p class="copyright">Copyright 2023 - All Rights Reserved</p>
     </footer>
 </body>
-<script src="script.js"></script> -->
+<script src="script.js"></script>
 
 </html>
